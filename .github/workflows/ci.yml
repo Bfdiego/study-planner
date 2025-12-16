@@ -29,7 +29,7 @@ jobs:
 
       - name: Run tests (pytest)
         env:
-          # En CI no queremos usar tu key real.
-          GEMINI_API_KEY: "dummy"
+            GEMINI_API_KEY: "dummy"
+            PYTHONPATH: .
         run: |
-          pytest -q
+            pytest -q
